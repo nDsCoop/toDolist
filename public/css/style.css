@@ -1,0 +1,13 @@
+a.link{
+	text-align: :center;
+	text-decoration-line:none;
+	color: lightblue;
+	font-size: 22px;
+}
+a:hover{
+	text-decoration-line:none;
+	color: blue;
+}
+div.row{
+	margin-bottom: :20px;
+}
