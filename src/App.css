@@ -2,6 +2,13 @@ div.page-header{
   color: lightblue;
   text-align: center;
 }
+.page-footer{
+  color: lightblue;
+  text-align: right;
+  right: 2rem;
+  position: absolute;
+  bottom: 2rem;
+}
 .row{
   margin-bottom:10px; 
 }
@@ -15,4 +22,9 @@ td.text-center{
   to {
     transform: rotate(360deg);
   }
+}
+.instruc{
+  text-align: right;
+  flex: 1;
+  margin-right: 2rem;
 }

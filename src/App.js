@@ -5,6 +5,7 @@ import Control from './components/Control';
 import Form from './components/Form';
 import List from './components/List';
 import {filter, includes, remove, orderBy as funcOrderBy, reject} from 'lodash';
+import Footer from './components/Footer';
 const { v4: uuidv4 } = require('uuid');
 class App extends Component {
   constructor(props){
@@ -132,6 +133,34 @@ class App extends Component {
 				 items={items}
 				 />
 			{/*list end*/}
+			{/*ins			<!-- Modal -->*/}
+			<div className="instruc">
+				<button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+					Instruction
+				</button>
+				<div className="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					<div className="modal-dialog" role="document">
+						<div className="modal-content">
+							<div className="modal-header">
+								<h5 className="modal-title" id="exampleModalLongTitle">Instruction</h5>
+								<button type="button" className="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div className="modal-body">
+							You can add jobs at Add Task. Just enter a name and choose a priority.
+							At the main page you can search by entering a word you are looking for. You can sort jobs by name and level next to the search bar.
+							Jobs are cached in your browser, they are only lost when you clear the clipboard of your open browser.
+							According to nDs
+							</div>
+							<div className="modal-footer">
+								<button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<Footer/>
 		</div>
     );
   }
